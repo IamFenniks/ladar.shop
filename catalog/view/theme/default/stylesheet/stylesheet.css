@@ -753,3 +753,8 @@ h2.price {
 .alert-dismissable .close, .alert-dismissible .close {
 	right: -1px;
 }
+
+
+/* MY SETTING */
+
+.cookie_notice_block button{border-radius: 5px !important;}
