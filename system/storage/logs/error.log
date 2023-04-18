@@ -1,2 +1,0 @@
-2023-04-13 12:09:22 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'adminandrej'@'localhost' (using password: YES) in W:\domains\ladar.shop\system\library\db\mysqli.php on line 7
-2023-04-13 12:19:39 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'adminandrej'@'localhost' (using password: YES) in W:\domains\ladar.shop\system\library\db\mysqli.php on line 7
