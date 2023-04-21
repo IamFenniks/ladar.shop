@@ -47,7 +47,7 @@ label {
 	font-weight: normal;
 }
 select.form-control, textarea.form-control, input[type="text"].form-control, input[type="password"].form-control, input[type="datetime"].form-control, input[type="datetime-local"].form-control, input[type="date"].form-control, input[type="month"].form-control, input[type="time"].form-control, input[type="week"].form-control, input[type="number"].form-control, input[type="email"].form-control, input[type="url"].form-control, input[type="search"].form-control, input[type="tel"].form-control, input[type="color"].form-control {
-	font-size: 12px;
+	font-size: 14px;
 }
 .input-group input, .input-group select, .input-group .dropdown-menu, .input-group .popover {
 	font-size: 12px;
@@ -757,4 +757,270 @@ h2.price {
 
 /* MY SETTING */
 
+/* myFonts Start */
+@font-face{
+	font-family:CuprumRegular;
+	font-weight:400;
+	font-style:normal;
+	src:url(../fonts/Cuprum/CuprumRegular/CuprumRegular.eot);
+	src:url(../fonts/Cuprum/CuprumRegular/CuprumRegular.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Cuprum/CuprumRegular/CuprumRegular.woff) format("woff"),
+	url(../fonts/Cuprum/CuprumRegular/CuprumRegular.ttf) format("truetype")
+}
+@font-face{
+	font-family:cuprum;
+	font-weight:700;
+	font-style:normal;
+	src:url(../fonts/Cuprum/CuprumBold/CuprumBold.eot);
+	src:url(../fonts/Cuprum/CuprumBold/CuprumBold.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Cuprum/CuprumBold/CuprumBold.woff) format("woff"),
+	url(../fonts/Cuprum/CuprumBold/CuprumBold.ttf) format("truetype")
+}
+@font-face{
+	font-family:cuprum;
+	font-weight:italic;
+	font-style:normal;
+	src:url(../fonts/Cuprum/CuprumItalic/CuprumItalic.eot);
+	src:url(../fonts/Cuprum/CuprumItalic/CuprumItalic.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Cuprum/CuprumItalic/CuprumItalic.woff) format("woff"),
+	url(../fonts/Cuprum/CuprumItalic/CuprumItalic.ttf) format("truetype")
+}
+@font-face{
+	font-family:cuprum;
+	font-weight:bold-italic;
+	font-style:normal;
+	src:url(../fonts/Cuprum/CuprumBoldItalic/CuprumBoldItalic.eot);
+	src:url(../fonts/Cuprum/CuprumBoldItalic/CuprumBoldItalic.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Cuprum/CuprumBoldItalic/CuprumBoldItalic.woff) format("woff"),
+	url(../fonts/Cuprum/CuprumBoldItalic/CuprumBoldItalic.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:100;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayThin/RalewayThin.eot);
+	src:url(../fonts/Raleway/RalewayThin/RalewayThin.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewayThin/RalewayThin.woff) format("woff"),
+	url(../fonts/Raleway/RalewayThin/RalewayThin.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:200;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.eot);
+	src:url(../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.woff) format("woff"),
+	url(../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:300;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayLight/RalewayLight.eot);
+	src:url(../fonts/Raleway/RalewayLight/RalewayLight.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewayLight/RalewayLight.woff) format("woff"),
+	url(../fonts/Raleway/RalewayLight/RalewayLight.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:400;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayRegular/RalewayRegular.eot);
+	src:url(../fonts/Raleway/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewayRegular/RalewayRegular.woff) format("woff"),
+	url(../fonts/Raleway/RalewayRegular/RalewayRegular.ttf) format("truetype")}
+@font-face{
+	font-family:raleway;
+	font-weight:500;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayMedium/RalewayMedium.eot);
+	src:url(../fonts/Raleway/RalewayMedium/RalewayMedium.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewayMedium/RalewayMedium.woff) format("woff"),
+	url(../fonts/Raleway/RalewayMedium/RalewayMedium.ttf) format("truetype")
+}
+@font-face
+{
+	font-family:raleway;
+	font-weight:600;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.eot);
+	src:url(../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.woff) format("woff"),
+	url(../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:700;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayBold/RalewayBold.eot);
+	src:url(../fonts/Raleway/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"),
+	url(../fonts/Raleway/RalewayBold/RalewayBold.woff) format("woff"),
+	url(../fonts/Raleway/RalewayBold/RalewayBold.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:800;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot);
+	src:url(../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot?#iefix) format("embedded-opentype"),
+		url(../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff) format("woff"),
+		url(../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf) format("truetype")
+}
+@font-face{
+	font-family:raleway;
+	font-weight:900;
+	font-style:normal;
+	src:url(../fonts/Raleway/RalewayBlack/RalewayBlack.eot);	
+	src:url(../fonts/Raleway/RalewayBlack/RalewayBlack.eot?#iefix) format("embedded-opentype"),
+		url(../fonts/Raleway/RalewayBlack/RalewayBlack.woff) format("woff"),
+		url(../fonts/Raleway/RalewayBlack/RalewayBlack.ttf) format("truetype")
+}
+/* myFonts End */
+
+body, font, a {
+    font-family: 'CuprumRegular', sans-serif;
+    font-weight: 400;
+    color: #558d8f;
+	font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #558d8f;
+}
+
+#top {
+    background-color: #EBFBFC;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#top .btn-link, #top-links li, #top-links a {
+    color: #558d8f;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+}
+
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover, #cart > .btn {
+    font-size: 14px;
+}
+
+.form-control{
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #8bb0b1;
+}
+.btn-default {
+    color: #558d8f;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
+    background-color: #e7e7e7;
+    background-image: linear-gradient(to bottom, #dddddd, #90ced0);
+    background-repeat: repeat-x;
+    border-color: #90ced0 #dddddd #558d8f #b1cfd0 !important;
+}
+
+.btn-inverse, #menu {
+    background-color: #6fabad;
+    background-image: linear-gradient(to bottom, #95cacc, #558d8f);
+    background-repeat: repeat-x;
+    border-color: #95cacc #6fabad #558d8f;
+}
+.btn-inverse:hover, 
+.dropdown-menu li > a:hover,
+#menu .see-all:hover, 
+#menu .see-all:focus {
+    background-color: #8bb0b1;
+    background-image: linear-gradient(to bottom, #63a4a6, #336264);
+    background-repeat: repeat-x;
+    border-color: #aecccd #8bb0b1 #6f8e8f;
+}
+.breadcrumb {
+    border: 1px solid #8bb0b1;
+	background-color: #EBFBFC;
+	padding: 3px 15px;
+}
+
+.breadcrumb > li {
+    padding: 0;
+    padding-left: 12px;
+}
+
+.breadcrumb > li::after{display: none;}
+
+.breadcrumb > li + li:before {
+    content: '>>';
+    padding: 0;
+    color: #558d8f;
+    margin-right: 5px;
+}
+
+.product-thumb{
+	border-color: #8bb0b1;
+}
+
+.product-thumb .button-group button, .see-all {
+    color: #558d8f;
+    background-color: #EBFBFC;
+}
+
+.list-group a {
+    border: 1px solid #8bb0b1;
+    color: #8bb0b1;
+    padding: 8px 12px;
+}
+
+.list-group a.active, .list-group a.active:hover, .list-group a:hover {
+    color: #558d8f;
+    background: #EBFBFC;
+    border: 1px solid #8bb0b1;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #558d8f;
+    border-color: #558d8f;
+}
+
+.swiper-viewport {
+    box-shadow: 0 1px 4px rgba(85,141,143,0.2) !important;
+}
+.swiper-button-prev:before, .swiper-button-next:before{
+    color: rgba(85,141,143,0.8) !important;
+}
+.swiper-pagination-bullet{
+	background: rgba(85,141,143,0.2) !important;
+}
+.swiper-pagination-bullet:hover{
+	background: rgba(85,141,143,0.5) !important;
+}
+.swiper-pagination-bullet-active{
+	background: rgba(85,141,143,1) !important;
+}
+
+footer {
+    background-color: #558d8f;
+    border-top: 1px solid #8bb0b1;
+    color: #EBFBFC;
+	padding: 30px;
+}
+
 .cookie_notice_block button{border-radius: 5px !important;}
+
+@media (min-width: 1200px){
+	.container {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px){
+	.container {
+	    width: 100%;
+	}
+}
+
+@media (min-width: 768px){
+	.container {
+		width: 100%;
+	}
+}
+
