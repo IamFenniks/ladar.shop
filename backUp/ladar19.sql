@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 21 2023 г., 17:31
--- Версия сервера: 5.7.29-log
--- Версия PHP: 7.3.26
+-- Время создания: Апр 19 2023 г., 13:00
+-- Версия сервера: 5.7.29
+-- Версия PHP: 7.4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -1328,7 +1328,7 @@ CREATE TABLE `oc_customer_online` (
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://ladar.shop/catalog/view/theme/default/fonts/Cuprum/CuprumRegular/CuprumRegular.ttf', 'http://ladar.shop/catalog/view/theme/default/stylesheet/stylesheet.css', '2023-04-21 14:28:04');
+('127.0.0.1', 0, 'http://ladar.shop/desktops', 'http://ladar.shop/', '2023-04-18 12:28:38');
 
 -- --------------------------------------------------------
 
@@ -1364,15 +1364,6 @@ CREATE TABLE `oc_customer_search` (
   `ip` varchar(40) NOT NULL,
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `oc_customer_search`
---
-
-INSERT INTO `oc_customer_search` (`customer_search_id`, `store_id`, `language_id`, `customer_id`, `keyword`, `category_id`, `sub_category`, `description`, `products`, `ip`, `date_added`) VALUES
-(1, 0, 1, 0, 'nature', 0, 0, 0, 0, '127.0.0.1', '2023-04-19 11:17:26'),
-(2, 0, 1, 0, 'mak', 0, 0, 0, 0, '127.0.0.1', '2023-04-19 11:18:35'),
-(3, 0, 1, 0, 'apple', 0, 0, 0, 1, '127.0.0.1', '2023-04-19 11:19:00');
 
 -- --------------------------------------------------------
 
@@ -2394,7 +2385,7 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (33, 'Рекомендуемые статьи', 'blog_featured', '{\"name\":\"\\u0420\\u0435\\u043a\\u043e\\u043c\\u0435\\u043d\\u0434\\u0443\\u0435\\u043c\\u044b\\u0435 \\u0441\\u0442\\u0430\\u0442\\u044c\\u0438\",\"article_name\":\"\",\"article\":[\"120\",\"123\",\"125\",\"124\"],\"limit\":\"4\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
 (34, 'Рекомендуемые статьи в товаре, категории и производителе', 'featured_article', '{\"name\":\"\\u0420\\u0435\\u043a\\u043e\\u043c\\u0435\\u043d\\u0434\\u0443\\u0435\\u043c\\u044b\\u0435 \\u0441\\u0442\\u0430\\u0442\\u044c\\u0438 \\u0432 \\u0442\\u043e\\u0432\\u0430\\u0440\\u0435, \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 \\u0438 \\u043f\\u0440\\u043e\\u0438\\u0437\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u0435\",\"limit\":\"4\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
 (35, 'Рекомендуемые товары в категории и производителе', 'featured_product', '{\"name\":\"\\u0420\\u0435\\u043a\\u043e\\u043c\\u0435\\u043d\\u0434\\u0443\\u0435\\u043c\\u044b\\u0435 \\u0442\\u043e\\u0432\\u0430\\u0440\\u044b \\u0432 \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 \\u0438 \\u043f\\u0440\\u043e\\u0438\\u0437\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u0435\",\"limit\":\"4\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
-(36, 'Политика конфиденциальности', 'cookie_notice', '{\"status\":\"1\",\"name\":\"\\u041f\\u043e\\u043b\\u0438\\u0442\\u0438\\u043a\\u0430 \\u043a\\u043e\\u043d\\u0444\\u0438\\u0434\\u0435\\u043d\\u0446\\u0438\\u0430\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\",\"block_color\":\"rgba(0, 0, 0, .4)\",\"text_color\":\"white\",\"button_color\":\"#35f067\",\"button_color_on_hover\":\"#2bc253\"}');
+(36, 'Политика конфиденциальности', 'cookie_notice', '{\"status\":\"1\",\"name\":\"\\u041f\\u043e\\u043b\\u0438\\u0442\\u0438\\u043a\\u0430 \\u043a\\u043e\\u043d\\u0444\\u0438\\u0434\\u0435\\u043d\\u0446\\u0438\\u0430\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\",\"block_color\":\"rgba(0, 0, 0, .7)\",\"text_color\":\"white\",\"button_color\":\"#35f067\",\"button_color_on_hover\":\"#2bc253\"}');
 
 -- --------------------------------------------------------
 
@@ -2856,7 +2847,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (46, 'Product 19', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/sony_vaio_1.jpg', 10, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:29', '2011-09-30 01:06:39', 1),
 (47, 'Product 21', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/hp_1.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 2, '2009-02-03 21:08:40', '2011-09-30 01:05:28', 1),
 (48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 995, 5, 'catalog/demo/ipod_classic_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-08', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-08 17:21:51', '2011-09-30 01:07:06', 1),
-(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2011-04-26 08:57:34', '2011-09-30 01:06:23', 1);
+(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 3, '2011-04-26 08:57:34', '2011-09-30 01:06:23', 1);
 
 -- --------------------------------------------------------
 
@@ -3989,8 +3980,7 @@ CREATE TABLE `oc_session` (
 --
 
 INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
-('83f41d596c5b8414f73ac15bb8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2023-04-21 15:28:04'),
-('e79066a55a479cad43f02b3137', 'false', '2023-04-21 15:30:32');
+('9a0836d6568c77c67ae4789f4a', '{\"user_id\":\"1\",\"user_token\":\"2YlsyCSMJvGmXvEz1f2HkQMGR1GSUX2R\"}', '2023-04-19 10:55:54');
 
 -- --------------------------------------------------------
 
@@ -6970,7 +6960,7 @@ ALTER TABLE `oc_blog_category`
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
@@ -7060,7 +7050,7 @@ ALTER TABLE `oc_customer_reward`
 -- AUTO_INCREMENT для таблицы `oc_customer_search`
 --
 ALTER TABLE `oc_customer_search`
-  MODIFY `customer_search_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `customer_search_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_transaction`
